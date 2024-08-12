@@ -1,0 +1,42 @@
+*{
+    border: 0;
+    margin: 0;
+}
+
+body{
+    text-align: center;
+    background-color: #0f0226;
+    color: white;
+    font-size: x-large;
+}
+.wrapper{
+    margin: auto;
+    width: 70%;
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    outline: 1px solid red;
+    height: 90vh;
+}
+
+.infoImg{
+    transform: scale(80%);
+    margin-top: 0;
+}
+.infoText{
+    font-size: 40px;
+    outline: 1px solid lightblue;
+    margin: auto 40px;
+    text-align: justify;
+}
+.infoText h1{
+    text-align: center;
+}
