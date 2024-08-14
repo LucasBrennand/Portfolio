@@ -1,42 +1,137 @@
 *{
     border: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-size: 40px;
+    text-align: center;
+    scroll-behavior: smooth;
+    font-family: Arial;
 }
 
 body{
-    text-align: center;
-    background-color: #0f0226;
+    background-color: #2E236C;
     color: white;
     font-size: x-large;
 }
 .wrapper{
     margin: auto;
-    width: 70%;
+    width: 90%;
 }
+/*Nav-bar*/
+.nav-bar{
+    text-align: right;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    background-color: #17153B;
+    box-shadow: 2px 2px 5px #000;
+    padding: 10px;
+    transition: top 0.2s ease-in-out;
+
+}
+.nav-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar ul li{
+    display: inline;
+}
+
+/*Greeting*/
+.bfg-wrapper{
+    margin: 70px 0 150px 0;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.05);
+}
+.bfg{
+    padding: 200px;
+    font-size: 240px;
+    background: linear-gradient(to right, red, greenyellow);
+    background-clip: text;
+    color: transparent;
+    font-family: "Schadow BT"
+}
+
+/*Info*/
+.info{
+    flex-direction: row;
+    margin: 60px 40px 50px;
+    padding: 20px 0;
+    text-align: justify;
+    background-color: #17153B;
+
+}
+.infoText h1{
+    text-align: center;
+}
+
+/*Experience*/
+.experience-wrapper{
+    background-color: #17153B;
+}
+.experience-wrapper h1{
+    padding-top: 35px;
+}
+.experience-box{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    margin-bottom: 100px;
+
+}
+.experience-wrapper .experience{
+    min-width: 100px;
+    background-color: black;
+    border-radius: 4px;
+    text-align: justify;
+    padding: 20px;
+}
+.experience h2{
+    text-align: center;
+    font-weight: bold;
+    font-family: "Fira Code";
+}
+
+/*Skills*/
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    outline: 1px solid lightblue;
+    margin-bottom: 100px;
+    background-color: #17153B;
+}
+
+/*Projects*/
 .projects{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2px;
+    outline: 1px solid white;
+    margin-bottom: 100px;
+    background-color: #17153B;
 }
-.info{
-    display: flex;
-    flex-direction: row;
-    outline: 1px solid red;
-    height: 90vh;
+.projects:active{
+    transform: scale(1.05);
 }
 
-.infoImg{
-    transform: scale(80%);
-    margin-top: 0;
+/*Contact*/
+.contact{
+    background-color: #17153B;
 }
-.infoText{
-    font-size: 40px;
-    outline: 1px solid lightblue;
-    margin: auto 40px;
-    text-align: justify;
-}
-.infoText h1{
-    text-align: center;
+.contact a{
+    display: flex;
+
 }
