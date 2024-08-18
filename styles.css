@@ -18,29 +18,32 @@ body{
     margin: auto;
     width: 98%;
 }
+
+.hidden1{
+    color: #77E4C8;
+    cursor: initial;
+}
 /*Nav-bar*/
 .nav-bar-wrapper{
     display: flex;
     position: fixed;
     flex-direction: row;
     top: 0;
-    right: 0;
     left: 0;
     width: 100vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     background-color: #478CCF;
     box-shadow: 4px 4px 5px #36C2CE;
     padding: 10px;
+    z-index: 1000;
 }
 .nav-bar{
     list-style: none;
-    display: flex;
-    flex-direction: row;
     color: white;
-    margin-left: 550px;
-}
-.nav-bar ul li{
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 .nav-bar a{
     color: white;
