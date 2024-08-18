@@ -22,6 +22,7 @@ body{
 .nav-bar-wrapper{
     display: flex;
     position: fixed;
+    flex-direction: row;
     top: 0;
     right: 0;
     left: 0;
@@ -30,8 +31,6 @@ body{
     background-color: #478CCF;
     box-shadow: 4px 4px 5px #36C2CE;
     padding: 10px;
-    outline: 1px solid white;
-    color: white;
 }
 .nav-bar{
     list-style: none;
@@ -60,7 +59,7 @@ body{
 }
 .bfg{
     padding: 200px;
-    font-size: 240px;
+    font-size: 200px;
     background: linear-gradient(to right, #020024, #090979, #00d4ff);
     background-clip: text;
     color: transparent;
