@@ -6,54 +6,62 @@
     text-align: center;
     scroll-behavior: smooth;
     font-family: Arial,serif;
+    font-weight: normal;
 }
 
 body{
-    background-color: #2E236C;
+    background-color: #77E4C8;
     color: white;
     font-size: x-large;
 }
 .wrapper{
     margin: auto;
-    width: 90%;
+    width: 98%;
 }
 /*Nav-bar*/
-.nav-bar{
-    text-align: right;
+.nav-bar-wrapper{
     display: flex;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     width: 100vw;
-    flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 10px;
-    background-color: #17153B;
-    box-shadow: 4px 4px 5px #000;
+    background-color: #478CCF;
+    box-shadow: 4px 4px 5px #36C2CE;
     padding: 10px;
-    transition: top 0.2s ease-in-out;
-
+    outline: 1px solid white;
+    color: white;
 }
-.nav-bar ul{
+.nav-bar{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 550px;
 }
 .nav-bar ul li{
     display: inline;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 12px;
+}
+.nav-bar a:hover{
+    transform: scaleX(200%);
+    color: #77E4C8;
 }
 
 /*Greeting*/
 .bfg-wrapper{
     margin: 70px 0 150px 0;
-
     background-color: rgb(255, 255, 255, 0.05);
 }
 .bfg{
     padding: 200px;
     font-size: 240px;
-    background: linear-gradient(to right, red, greenyellow);
+    background: linear-gradient(to right, #020024, #090979, #00d4ff);
     background-clip: text;
     color: transparent;
     font-family: "Schadow BT"
@@ -63,25 +71,40 @@ body{
 .info{
     min-width: 100px;
     flex-direction: row;
-    margin: 60px auto 50px;
+    margin: 60px auto 10px;
     padding: 30px;
     text-align: justify;
-    background-color: #17153B;
+    background-color: #36C2CE;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px #478CCF;
 }
 .infoText{
-    background-color: black;
+    background-color: #478CCF;
+    padding: 20px;
+    border-radius: 4px;
 }
 .info h1{
     text-align: center;
     padding-bottom: 20px;
+    font-size: 70px;
+    color: #77E4C8;
+    font-weight: bold;
+    font-family: "Fira Code";
 }
 
 /*Experience*/
 .experience-wrapper{
-    background-color: #17153B;
+    background-color: #36C2CE;
+    margin-bottom: -90px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px #478CCF;
 }
 .experience-wrapper h1{
     padding-top: 35px;
+    font-size: 70px;
+    color: #77E4C8;
+    font-weight: bold;
+    font-family: "Fira Code";
 }
 .experience-box{
     display: flex;
@@ -91,11 +114,10 @@ body{
     overflow-x: auto;
     overscroll-behavior-x: contain;
     margin-bottom: 100px;
-
 }
 .experience-wrapper .experience{
     min-width: 100px;
-    background-color: black;
+    background-color: #478CCF;
     border-radius: 4px;
     text-align: justify;
     padding: 20px;
@@ -104,20 +126,27 @@ body{
     text-align: center;
     font-weight: bold;
     font-family: "Fira Code";
+    color: #77E4C8;
+    font-size: 50px;
+}
+.experience{
+    font-size: 37px;
+    width: 100%;
 }
 
 /*Skills*/
 .skills-wrapper{
-    background-color: #17153B;
+    background-color: #36C2CE;
     padding: 20px;
-    margin: -35px auto;
+    margin: auto auto 10px auto;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px #478CCF;
 }
 .skills{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     margin: 20px;
 }
 .skills a{
@@ -126,10 +155,14 @@ body{
 }
 .skills a:hover{
     transform: scale(1.1);
-    color: darkred;
+    color: #77E4C8;
 }
 .skills-wrapper h1{
-
+    font-size: 70px;
+    color: #77E4C8;
+    font-weight: bold;
+    padding-bottom: -20px;
+    font-family: "Fira Code";
 }
 .skills-icon{
     display: flex;
@@ -138,27 +171,97 @@ body{
 
 }
 
-
 /*Projects*/
+.projects-wrapper{
+    background-color: #36C2CE;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px #478CCF;
+}
 .projects{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    outline: 1px solid white;
-    margin-bottom: 100px;
-    background-color: #17153B;
+    justify-content: space-between;
+    gap: 10px;
+    height: 700px;
+    text-align: justify;
+
 }
-.projects:active{
-    transform: scale(1.05);
+.projects img{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.projectsBox{
+    padding: 20px;
+    width: 100%;
+    background: #478CCF;
+    border-radius: 10px;
+    text-align: justify;
+}
+.projects-wrapper h1{
+    font-size: 70px;
+    color: #77E4C8;
+    font-weight: bold;
+    font-family: "Fira Code";
+}
+.projects h4{
+    text-align: center;
+    font-weight: bold;
+    font-family: "Fira Code";
+    color: #77E4C8;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 /*Contact*/
-.contact{
-    background-color: #17153B;
+.contact-wrapper{
+    background-color: #36C2CE;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px #478CCF;
 }
-.contact a{
-    display: flex;
+.contact-wrapper h1{
+    margin-bottom: 20px;
+    font-size: 70px;
+    color: #77E4C8;
+    font-weight: bold;
+    font-family: "Fira Code";
 
+}
+.contactBox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 50px;
+    padding-bottom: 10px;
+}
+.contact{
+    font-size: 30px;
+}
+.contact i{
+    color: #77E4C8;
+    font-size: 34px;
+}
+.contact i:hover{
+    transform: scale(140%);
+}
+
+/*Copyright*/
+.copyright{
+    border-top: 4px solid #478CCF;
+    background: #36C2CE;
+    padding-top: 10px;
+    font-size: 20px;
+    color: #77E4C8;
+    font-weight: bold;
+}
+.copyright i{
+    transform: scale(80%);
+    text-align: center;
 }
